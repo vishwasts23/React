@@ -1,0 +1,13 @@
+body {
+  font-family: Arial;
+  padding: 30px;
+}
+
+.container {
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  line-height: 2;
+}
