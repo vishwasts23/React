@@ -1,20 +1,27 @@
 import React from "react";
 
-export default function ProfileCard(props) {
+export default function ProfileCard({
+  image,
+  name,
+  age,
+  role,
+  location,
+  skills
+}) {
   return (
     <div className="card">
 
-      <img src={props.image} alt="profile" />
+      <img src={image} alt="profile" />
 
-      <h2>{props.name}</h2>
+      <h2>{name}</h2>
 
-      <p><b>Age:</b> {props.age}</p>
+      <p><b>Age:</b> {age}</p>
 
-      <p><b>Role:</b> {props.role}</p>
+      <p><b>Role:</b> {role}</p>
 
-      <p><b>Location:</b> {props.location}</p>
+      <p><b>Location:</b> {location}</p>
 
-      <p><b>Skills:</b> {props.skills}</p>
+      <p><b>Skills:</b> {skills}</p>
 
     </div>
   );
