@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #e9eef5;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.app h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.context-card,
+.form-card {
+  max-width: 750px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.nested-box {
+  margin-top: 15px;
+  margin-left: 20px;
+  border-left: 4px solid #2563eb;
+  padding-left: 20px;
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.theme-btn,
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.theme-btn {
+  background: #2563eb;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  background: #16a34a;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  display: block;
+  margin-top: 4px;
+}
+
+.light {
+  background: #e9eef5;
+  color: black;
+}
+
+.dark {
+  background: #1e293b;
+  color: white;
+}
+
+.dark .context-card,
+.dark .form-card {
+  background: #334155;
+}
+
+.dark input {
+  background: #475569;
+  color: white;
+  border: 1px solid #64748b;
+}
