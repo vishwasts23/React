@@ -1,0 +1,142 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f3f6fb;
+}
+
+/* Navbar */
+
+.navbar{
+  background:#2563eb;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 60px;
+  box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.navbar h2{
+  font-size:28px;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  transition:.3s;
+}
+
+.nav-links a:hover{
+  color:#fde047;
+}
+
+.nav-links .active{
+  border-bottom:2px solid white;
+}
+
+/* Common Page */
+
+.page{
+  max-width:900px;
+  margin:50px auto;
+  text-align:center;
+}
+
+.page h1{
+  color:#2563eb;
+  margin-bottom:15px;
+  font-size:42px;
+}
+
+.page p{
+  color:#555;
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+/* User List */
+
+.user-card{
+  background:white;
+  width:420px;
+  margin:18px auto;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.user-card:hover{
+  transform:translateY(-5px);
+}
+
+.user-card a{
+  text-decoration:none;
+  color:#2563eb;
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* Details */
+
+.details-card{
+  width:520px;
+  margin:40px auto;
+  background:white;
+  border-radius:15px;
+  padding:35px;
+  box-shadow:0 6px 18px rgba(0,0,0,.1);
+}
+
+.details-card h2{
+  color:#2563eb;
+  margin-bottom:25px;
+  text-align:center;
+}
+
+.details-card p{
+  font-size:18px;
+  margin:18px 0;
+  text-align:left;
+}
+
+.details-card strong{
+  color:#111827;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.user-card,
+.details-card{
+    width:90%;
+}
+
+.page h1{
+    font-size:34px;
+}
+
+}
